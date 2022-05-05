@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Hello Django</h1>
+
+    <form method="POST" enctype="multipart/form-data">{% csrf_token %}
+        画像ファイル<input type="file" name="pic">
+        <br>
+        <input type="submit" name="botan" value="send">
+    </form>
+
+{% endblock %}
